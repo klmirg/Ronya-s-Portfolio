@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+
+body {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:lavender;
+}
+
+nav ul li {
+   list-style: none;
+   display: inline-block;
+}
+
+.nav {
+
+    
+}
+
+
+header {
+    text-align: center;
+    background-image: url("../images/Norway Sunset.jpg");
+    padding: 0;
+    background-size: cover;
+    line-height: 5em;
+    max-width: 100%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    background-position: 10%;
+    
+
+    
+}
+
+header h1 {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 60px;
+    color:maroon;
+}
+
+header a {
+    text-decoration: none;
+    color: lavender;
+    font-size: 30px;
+    margin-left: 110px;
+    margin-right: 110px;
+}
+
+header nav {
+    margin: 20px 0;
+    padding-bottom: 15px;
+}
+
+header nav ul li a {
+    margin: 50px;
+    
+    
+}
+
+header nav ul li a:hover {
+    color: lightcoral;
+
+}
+
+#about div {
+   
+}
+
+#about img {
+    padding: 0px 0px;
+    max-width: 15%;
+    position: absolute;
+    bottom: 5px;
+    
+}
+
+#about h2 {
+    text-align: center;
+    line-height: 1em;
+}
+
+#about p {
+    line-height: 1.5em;
+    margin: auto 200px auto 0px;
+    padding: 10px 100px 0px 220px;
+}
+
+/* not needed 
+.about div {
+    padding-top: 200px;
+    margin-top: 200px;
+}*/
+
+.ronya img {
+    
+}
