@@ -1,3 +1,9 @@
+:root {
+    --black: black;
+    --lavender: lavender;
+    
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,9 +11,9 @@
 }
 
 body {
-    color: black;
+    color: var(--black);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color:lavender;
+    background-color:var(--lavender);
 }
 
 nav ul li {
@@ -31,9 +37,10 @@ header {
     margin-bottom: 0px;
     padding-bottom: 0px;
     background-position: 10%;
-    
-
-    
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 9999;
 }
 
 header h1 {
@@ -45,7 +52,7 @@ header h1 {
 
 header a {
     text-decoration: none;
-    color: lavender;
+    color: var(--lavender);
     font-size: 30px;
     margin-left: 110px;
     margin-right: 110px;
@@ -57,9 +64,7 @@ header nav {
 }
 
 header nav ul li a {
-    margin: 50px;
-    
-    
+    margin: 50px;  
 }
 
 header nav ul li a:hover {
@@ -67,7 +72,13 @@ header nav ul li a:hover {
 
 }
 
-#about div {
+.about h2 {
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+#about {
+   flex-wrap: wrap;
    
 }
 
@@ -75,13 +86,16 @@ header nav ul li a:hover {
     padding: 0px 0px;
     max-width: 15%;
     position: absolute;
-    bottom: 5px;
+    top: 215px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    flex-shrink: inherit;
     
 }
 
 #about h2 {
     text-align: center;
     line-height: 1em;
+    text-decoration: underline;
 }
 
 #about p {
@@ -90,12 +104,100 @@ header nav ul li a:hover {
     padding: 10px 100px 0px 220px;
 }
 
-/* not needed 
-.about div {
-    padding-top: 200px;
-    margin-top: 200px;
-}*/
+#contact-me {
+    position: absolute;
+    right: 10px;
+    top: 215px;
+    background-image: url("../images/resizedwaterfall.jpg.jpeg");
+    background-position: 20%;
+    background-size: 300px;
+    text-align: center;
+    color: var(--lavender);
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    display: flexbox;
+}
 
-.ronya img {
-    
+#contact-me h2 {
+    line-height: 1em;
+    text-align: center;
+    color:var(--black);
+}
+
+#contact-me a {
+    line-height: 3em;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    color:var(--black);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#contact-me a:hover {
+    color: coral;
+}
+
+#projects {
+    text-align:center;
+}
+
+#projects h6 {
+    font-size: 24px;
+    text-align: center;
+    text-decoration: underline;
+    padding: 25px;
+}
+
+#projects p {
+    line-height: 3em;
+}
+
+#projects img {
+    box-shadow:0 0 10px ;
+}
+
+#skills {
+    position: absolute;
+    top: 235%;
+}
+
+#skills h4 {
+    font-size: 24px;
+    text-decoration: underline;
+
+}
+
+
+
+
+#resume {
+    position: absolute;
+    top: 260%;
+}
+
+#resume h5 {
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 575px) {
+
 }
