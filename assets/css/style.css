@@ -72,6 +72,10 @@ header nav ul li a:hover {
 
 }
 
+.about {
+    flex-wrap: wrap;
+}
+
 .about h2 {
     font-size: 24px;
     text-decoration: underline;
@@ -88,7 +92,7 @@ header nav ul li a:hover {
     position: absolute;
     top: 215px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    flex-shrink: inherit;
+    /*flex-shrink: inherit; */
     
 }
 
@@ -101,7 +105,7 @@ header nav ul li a:hover {
 #about p {
     line-height: 1.5em;
     margin: auto 200px auto 0px;
-    padding: 10px 100px 0px 220px;
+    padding: 10px 100px 50px 220px;
 }
 
 #contact-me {
@@ -116,8 +120,7 @@ header nav ul li a:hover {
     padding: 25px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     flex-wrap: wrap;
-    position: -webkit-sticky;
-    display: flexbox;
+   /* position: -webkit-sticky; */
 }
 
 #contact-me h2 {
@@ -140,6 +143,20 @@ header nav ul li a:hover {
     color: coral;
 }
 
+#skills {
+    text-align: center;
+    line-height: 3em;
+    padding-bottom: 50px;
+    /*position: absolute;
+    top: 235%; */
+}
+
+#skills h4 {
+    font-size: 24px;
+    text-decoration: underline;
+
+}
+
 #projects {
     text-align:center;
 }
@@ -149,6 +166,8 @@ header nav ul li a:hover {
     text-align: center;
     text-decoration: underline;
     padding: 25px;
+    padding-top: 100px;
+    margin-top: 100px;
 }
 
 #projects p {
@@ -159,30 +178,59 @@ header nav ul li a:hover {
     box-shadow:0 0 10px ;
 }
 
-#skills {
-    position: absolute;
-    top: 235%;
-}
-
-#skills h4 {
-    font-size: 24px;
-    text-decoration: underline;
-
-}
-
-
-
 
 #resume {
-    position: absolute;
-    top: 260%;
+    position: center;
+    text-align: center;
+    padding-bottom: 100px;
 }
 
-#resume h5 {
+#resume iframe {
+    position: center;
+}
+
+#resume h2 {
     font-size: 24px;
     text-decoration: underline;
+    text-align: center;
+    line-height: 3em;
 }
 
+
+
+
+@media screen and (max-width: 980px) {
+    header {
+        padding-right: 0px;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+    }
+    #about p {
+        width: 50%
+    }
+
+    #contact-me div {
+        position: absolute;
+        right: 50px;
+        top: 100px;
+        background-image: url("/assets/images/resizedwaterfall.jpg.jpeg");
+        background-size: 50px;
+    }
+
+    #contact-me {
+        background-image: url("/assets/images/resizedwaterfall.jpg.jpeg");
+    }
+
+
+
+    #about img {
+       position: absolute;
+       top: 300px;
+       width: 100%;
+        
+    }
+}
 
 
 
@@ -191,7 +239,17 @@ header nav ul li a:hover {
 
 @media screen and (max-width: 768px) {
     section {
-        padding: 30px 15px;
+        font-size: 20%;
+        
+    }
+
+    .about h2 {
+        font-size: 20%;
+
+    }
+
+    #contact-me {
+        background-image: url("/assets/images/resizedwaterfall.jpg.jpeg");
     }
 }
 
@@ -199,5 +257,9 @@ header nav ul li a:hover {
 
 
 @media screen and (max-width: 575px) {
+
+    #contact-me {
+        background-image: url("/assets/images/resizedwaterfall.jpg.jpeg");
+    }
 
 }
