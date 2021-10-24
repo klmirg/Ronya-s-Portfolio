@@ -3,6 +3,7 @@
     --lavender: lavender;
     --lightcoral: lightcoral;
     --maroon: maroon;
+    --lemonchiffon: lemonchiffon;
   }
   
   * {
@@ -65,10 +66,12 @@
   
   header nav ul li a:hover {
     color: var(--lightcoral);
-    
   }
   
-  
+  .about {
+      width: 100%;
+  }
+
   .about img {
     padding: 0px 0px;
     max-width: 20%;
@@ -77,34 +80,44 @@
     bottom: 100px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
-    
   }
   
   .about h2 {
     text-align: center;
     line-height: 1em;
-    
-    color: lemonchiffon;
+    color: var(--lemonchiffon);
   }
   
   .about p {
     line-height: 1.5em;
     margin: auto 200px auto 0px;
-    padding: 10px 100px 50px 220px;
+    padding: 10px 100px 50px 220px; 
     font-weight: bolder;
+    color: white;
   }
   
   .projects {
     text-align: center;
-  }
+  } 
   
   .projects h2 {
     font-size: 24px;
     text-align: center;
     padding: 25px;
-    padding-top: 100px;
-    margin-top: 100px;
-    color:lemonchiffon;
+    padding-top: 75px;
+    margin-top: 75px;
+    color:var(--lemonchiffon);
+  }
+
+  .projects ul li {
+      display: inline-block;
+  }
+
+  .projects ul li p {
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      font-style: italic;
   }
   
   
@@ -117,15 +130,11 @@
     height: 650px;
   }
   
-  
-  
-  
-  
   .contact-me {
     position: relative;
     background-size: 100%; 
     text-align: center; 
-    color: var(--lavender);
+    color: var(--lemonchiffon);
     padding-top: 25px; 
     margin-top: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -136,7 +145,7 @@
     text-align: left;
     position: absolute;
     bottom: 50%;
-    color:var(--lavender);
+    color:var(--lemonchiffon);
     padding-left: 10%;
   }
   
@@ -158,7 +167,6 @@
     list-style: none;
     display: inline-block;
     margin-bottom: 20px;
-    
   }
   
    footer ul li a {
@@ -177,8 +185,8 @@
         justify-content: center;
         position: relative;
         width: 100%;
-        
     }
+
     .about p {
         width: 50%
     }
@@ -187,20 +195,13 @@
       text-align: center;
       justify-content: center;
       position: relative;
-        
     }
-  
   
     .contact-me {
         width: 100%;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
     }
-  
-  
-  
-    .about img {
-     
-        
-    } 
   
     .about h2 {
       justify-content: center;
@@ -212,7 +213,11 @@
       justify-content: center;
       position: relative;
     }
-  
+
+    footer div {
+        width: 100%;
+        margin-bottom: 0px;
+    }
   }
   
   
@@ -221,21 +226,29 @@
   
   
   @media screen and (max-width: 768px) {
+    header {
+        padding-right: 0px;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+    }
+
+    header nav ul {
+        font-size: 20px;
+    }
+
     .about {
       text-align: center;
       justify-content: center;
-      position: relative;
-        
+      position: relative; 
     }
   
     .about p {
-      width: 50%;
-        
+      width: 50%; 
     }
   
     .about img {
-        width: 100%;
-        
+        width: 100%; 
     } 
   
     .contact-me h3 {
@@ -243,21 +256,19 @@
       justify-content: center;
       position: relative;
     }
-  
-   
   }
   
   
   
   
   @media screen and (max-width: 575px) {
-    .about img {
-        
+    .about {
+        text-align: center;
+        justify-content: center;
+        position: relative;
     }
-    
-  
-    .about h2 {
-        
+
+    .about p {
+        width: 50%;
     }
-    
-  }
+}
