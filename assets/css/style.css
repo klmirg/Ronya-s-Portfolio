@@ -1,35 +1,30 @@
 :root {
     --black: black;
     --lavender: lavender;
-    
-}
-
-* {
+    --lightcoral: lightcoral;
+    --maroon: maroon;
+  }
+  
+  * {
     margin: 0;
     padding: 0;
-   
-}
-
-body {
-    color: var(--black);
+  }
+  
+  body {
+    color: lavender;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color:var(--lavender);
-}
-
-nav ul li {
-   list-style: none;
-   display: inline-block;
-}
-
-.nav {
-
-    
-}
-
-
-header {
+    background-image: url("../images/waterfall.jpg.jpeg");
+    background-size: cover;
+  }
+  
+  nav ul li {
+    list-style: none;
+    display: inline-block;
+  }
+  
+  header {
     text-align: center;
-    background-image: url("../images/Norway Sunset.jpg");
+    background-image: url("../images/Norway\ Sunset.jpg"); 
     padding: 0;
     background-size: cover;
     line-height: 5em;
@@ -39,227 +34,230 @@ header {
     background-position: 10%;
     flex-wrap: wrap;
     position: -webkit-sticky;
-    position: sticky;
+    position: sticky; 
     z-index: 9999;
-}
-
-header h1 {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  header h1 {
     text-align: center;
     font-weight: lighter;
     font-size: 60px;
-    color:maroon;
-}
-
-header a {
+    color:var(--maroon);
+  }
+  
+  header a {
     text-decoration: none;
     color: var(--lavender);
     font-size: 30px;
     margin-left: 110px;
     margin-right: 110px;
-}
-
-header nav {
+  }
+  
+  header nav {
     margin: 20px 0;
     padding-bottom: 15px;
-}
-
-header nav ul li a {
+  }
+  
+  header nav ul li a {
     margin: 50px;  
-}
-
-header nav ul li a:hover {
-    color: lightcoral;
-
-}
-
-.about {
-    flex-wrap: wrap;
-}
-
-.about h2 {
-    font-size: 24px;
-    text-decoration: underline;
-}
-
-#about {
-   flex-wrap: wrap;
-   
-}
-
-#about img {
-    padding: 0px 0px;
-    max-width: 15%;
-    position: absolute;
-    top: 215px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    /*flex-shrink: inherit; */
+  }
+  
+  header nav ul li a:hover {
+    color: var(--lightcoral);
     
-}
-
-#about h2 {
+  }
+  
+  
+  .about img {
+    padding: 0px 0px;
+    max-width: 20%;
+    position: relative;
+    float: right;
+    bottom: 100px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    
+  }
+  
+  .about h2 {
     text-align: center;
     line-height: 1em;
-    text-decoration: underline;
-}
-
-#about p {
+    
+    color: lemonchiffon;
+  }
+  
+  .about p {
     line-height: 1.5em;
     margin: auto 200px auto 0px;
     padding: 10px 100px 50px 220px;
-}
-
-#contact-me {
-    position: absolute;
-    right: 10px;
-    top: 215px;
-    background-image: url("../images/resizedwaterfall.jpg.jpeg");
-    background-position: 20%;
-    background-size: 300px;
+    font-weight: bolder;
+  }
+  
+  .projects {
     text-align: center;
-    color: var(--lavender);
-    padding: 25px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    flex-wrap: wrap;
-   /* position: -webkit-sticky; */
-}
-
-#contact-me h2 {
-    line-height: 1em;
-    text-align: center;
-    color:var(--black);
-}
-
-#contact-me a {
-    line-height: 3em;
-    text-decoration: none;
-    padding: 10px;
-    display: inline-block;
-    color:var(--black);
-    font-weight: bold;
-    font-size: 18px;
-}
-
-#contact-me a:hover {
-    color: coral;
-}
-
-#skills {
-    text-align: center;
-    line-height: 3em;
-    padding-bottom: 50px;
-    /*position: absolute;
-    top: 235%; */
-}
-
-#skills h4 {
-    font-size: 24px;
-    text-decoration: underline;
-
-}
-
-#projects {
-    text-align:center;
-}
-
-#projects h6 {
+  }
+  
+  .projects h2 {
     font-size: 24px;
     text-align: center;
-    text-decoration: underline;
     padding: 25px;
     padding-top: 100px;
     margin-top: 100px;
-}
-
-#projects p {
-    line-height: 3em;
-}
-
-#projects img {
-    box-shadow:0 0 10px ;
-}
-
-
-#resume {
-    position: center;
-    text-align: center;
-    padding-bottom: 100px;
-}
-
-#resume iframe {
-    position: center;
-}
-
-#resume h2 {
-    font-size: 24px;
-    text-decoration: underline;
-    text-align: center;
-    line-height: 3em;
-}
-
-
-
-
-@media screen and (max-width: 980px) {
+    color:lemonchiffon;
+  }
+  
+  
+  .projects img {
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .projects img:hover {
+    width: 350px;
+    height: 650px;
+  }
+  
+  
+  
+  
+  
+  .contact-me {
+    position: relative;
+    background-size: 100%; 
+    text-align: center; 
+    color: var(--lavender);
+    padding-top: 25px; 
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: var(--maroon);
+  }
+  
+  .contact-me h3 {
+    text-align: left;
+    position: absolute;
+    bottom: 50%;
+    color:var(--lavender);
+    padding-left: 10%;
+  }
+  
+  .contact-me ul li a {
+    line-height: 1em;
+    text-decoration: none;
+    padding: 20px; 
+    display: flex; 
+    color:var(--black);
+    font-weight: bold;
+    font-size: 18px;
+  } 
+  
+  .contact-me a:hover {
+    color: var(--lightcoral);
+  }
+  
+  footer ul li {
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 20px;
+    
+  }
+  
+   footer ul li a {
+    height: 50px;
+    width: 50px;
+  }
+  
+   
+  
+  
+  
+  
+  @media screen and (max-width: 980px) {
     header {
         padding-right: 0px;
         justify-content: center;
         position: relative;
         width: 100%;
+        
     }
-    #about p {
+    .about p {
         width: 50%
     }
-
-    #contact-me div {
-        position: absolute;
-        right: 50px;
-        top: 100px;
-        background-image: url("/assets/images/resizedwaterfall.jpg.jpeg");
-        background-size: 50px;
-    }
-
-    #contact-me {
-        background-image: url("/assets/images/resizedwaterfall.jpg.jpeg");
-    }
-
-
-
-    #about img {
-       position: absolute;
-       top: 300px;
-       width: 100%;
+  
+    .about {
+      text-align: center;
+      justify-content: center;
+      position: relative;
         
     }
-}
-
-
-
-
-
-
-@media screen and (max-width: 768px) {
-    section {
-        font-size: 20%;
-        
+  
+  
+    .contact-me {
+        width: 100%;
     }
-
+  
+  
+  
+    .about img {
+     
+        
+    } 
+  
     .about h2 {
-        font-size: 20%;
-
+      justify-content: center;
+      position: relative;
+        
     }
-
-    #contact-me {
-        background-image: url("/assets/images/resizedwaterfall.jpg.jpeg");
+    .contact-me h3 {
+      text-align: center;
+      justify-content: center;
+      position: relative;
     }
-}
-
-
-
-
-@media screen and (max-width: 575px) {
-
-    #contact-me {
-        background-image: url("/assets/images/resizedwaterfall.jpg.jpeg");
+  
+  }
+  
+  
+  
+  
+  
+  
+  @media screen and (max-width: 768px) {
+    .about {
+      text-align: center;
+      justify-content: center;
+      position: relative;
+        
     }
-
-}
+  
+    .about p {
+      width: 50%;
+        
+    }
+  
+    .about img {
+        width: 100%;
+        
+    } 
+  
+    .contact-me h3 {
+      text-align: center;
+      justify-content: center;
+      position: relative;
+    }
+  
+   
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 575px) {
+    .about img {
+        
+    }
+    
+  
+    .about h2 {
+        
+    }
+    
+  }
