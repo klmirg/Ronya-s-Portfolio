@@ -8,7 +8,7 @@ A professional website to showcase my work and achievements.
 * CSS
 
 ## Website
-https://klmirg.github.io/Ronyas-Portfolio/
+https://klmirg.github.io/The-Professional-Portfolio-of-Ronya-Gettis/
 
 ## Image of Website
 ![](assets/images/FinalScreenshot.png)
