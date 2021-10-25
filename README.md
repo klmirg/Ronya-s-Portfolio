@@ -11,7 +11,7 @@ A professional website to showcase my work and achievements.
 https://klmirg.github.io/Ronyas-Portfolio/
 
 ## Image of Website
-![]()
+![](assets/images/FinalScreenshot.png)
 
 ## Contribution
 Ronya Gettis
