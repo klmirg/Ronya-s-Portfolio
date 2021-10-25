@@ -1,3 +1,4 @@
+/* commonly used colors throughout the portfolio */
 :root {
     --black: black;
     --lavender: lavender;
@@ -17,7 +18,7 @@
     background-image: url("../images/waterfall.jpg.jpeg");
     background-size: cover;
   }
-  
+  /* Start of the header styling */
   nav ul li {
     list-style: none;
     display: inline-block;
@@ -67,7 +68,9 @@
   header nav ul li a:hover {
     color: var(--lightcoral);
   }
-  
+
+  /* End of the styling for the header */
+  /* Start of the styling of the about me section */
   .about {
       width: 100%;
   }
@@ -95,7 +98,10 @@
     font-weight: bolder;
     color: white;
   }
-  
+
+  /* End of the styling for the About Me section */
+
+  /* Start of the styling for my projects section*/
   .projects {
     text-align: center;
   } 
@@ -111,6 +117,11 @@
 
   .projects ul li {
       display: inline-block;
+      justify-content: stretch;
+  }
+
+  .projects ul li a {
+      text-align:center;
   }
 
   .projects ul li p {
@@ -120,16 +131,30 @@
       font-style: italic;
   }
   
-  
-  .projects img {
-    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
-  }
-  
-  .projects img:hover {
+  .Project img:hover {
     width: 350px;
     height: 650px;
   }
   
+  .projects img {
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    justify-content: center;
+  }
+  
+
+  .Project2 img:hover {
+      width: 350px;
+      height: 550px;
+  }
+
+  .Project3 img:hover {
+      width: 350px;
+      height: 550px;
+  }
+
+  /* End of the styling for my projections section */
+  
+  /* Start of the styling for the Contact Me section / the footer */
   .contact-me {
     position: relative;
     background-size: 100%; 
@@ -173,12 +198,12 @@
     height: 50px;
     width: 50px;
   }
-  
+  /* End of the styling for the Contact Me / footer section */
    
   
   
   
-  
+  /* This section applies styling to any screens smaller then 980px */
   @media screen and (max-width: 980px) {
     header {
         padding-right: 0px;
@@ -224,7 +249,7 @@
   
   
   
-  
+  /* This section applies styling to any screens smaller then 768px */
   @media screen and (max-width: 768px) {
     header {
         padding-right: 0px;
@@ -261,6 +286,7 @@
   
   
   
+  /* This section applies any styling to screens smaller then 575px */
   @media screen and (max-width: 575px) {
     .about {
         text-align: center;
