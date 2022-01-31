@@ -133,28 +133,25 @@
   }
   
   .Project img:hover {
-    width: 250px;
-    height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   }
   
   .projects img {
     box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
     justify-content: center;
+    border-radius: 5px;
   }
 
   .Project2 img:hover {
-      width: 200px;
-      height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   }
 
   .Project3 img:hover {
-      width: 250px;
-      height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   }
 
   .Project4 img:hover {
-    width: 250px;
-    height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   }
 
   /* End of the styling for my projections section */
@@ -247,6 +244,7 @@
     footer div {
         width: 100%;
         margin-bottom: 0px;
+        padding-bottom: 0px;
     }
   }
   
